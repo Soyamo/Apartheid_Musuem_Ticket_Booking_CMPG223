@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A21BFBC0-E986-4D4F-9D4F-E37CEFD088F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Apartheid_Musuem_Ticket_Booking_CMPG223_Group19</RootNamespace>
+    <AssemblyName>Apartheid_Musuem_Ticket_Booking_CMPG223_Group19</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bookings.Designer.cs">
+      <DependentUpon>Bookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments.Designer.cs">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchemaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchemaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchemaDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchemaDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchemaDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchemaDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchemaDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchemaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchemaDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchemaDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchemaDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchemaDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchemaDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchemaDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchemaDataSet9.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bookings.resx">
+      <DependentUpon>Bookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments.resx">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SchemaDataSet.xsc">
+      <DependentUpon>SchemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchemaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchemaDataSet.xss">
+      <DependentUpon>SchemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet1.xsc">
+      <DependentUpon>SchemaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchemaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchemaDataSet1.xss">
+      <DependentUpon>SchemaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet10.xsc">
+      <DependentUpon>SchemaDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchemaDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchemaDataSet10.xss">
+      <DependentUpon>SchemaDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet11.xsc">
+      <DependentUpon>SchemaDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchemaDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchemaDataSet11.xss">
+      <DependentUpon>SchemaDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet12.xsc">
+      <DependentUpon>SchemaDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchemaDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchemaDataSet12.xss">
+      <DependentUpon>SchemaDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet13.xsc">
+      <DependentUpon>SchemaDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchemaDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchemaDataSet13.xss">
+      <DependentUpon>SchemaDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet14.xsc">
+      <DependentUpon>SchemaDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchemaDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchemaDataSet14.xss">
+      <DependentUpon>SchemaDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet2.xsc">
+      <DependentUpon>SchemaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchemaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchemaDataSet2.xss">
+      <DependentUpon>SchemaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet3.xsc">
+      <DependentUpon>SchemaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchemaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchemaDataSet3.xss">
+      <DependentUpon>SchemaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet4.xsc">
+      <DependentUpon>SchemaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchemaDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchemaDataSet4.xss">
+      <DependentUpon>SchemaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet5.xsc">
+      <DependentUpon>SchemaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchemaDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchemaDataSet5.xss">
+      <DependentUpon>SchemaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet6.xsc">
+      <DependentUpon>SchemaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchemaDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchemaDataSet6.xss">
+      <DependentUpon>SchemaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet7.xsc">
+      <DependentUpon>SchemaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchemaDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchemaDataSet7.xss">
+      <DependentUpon>SchemaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet8.xsc">
+      <DependentUpon>SchemaDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchemaDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchemaDataSet8.xss">
+      <DependentUpon>SchemaDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet9.xsc">
+      <DependentUpon>SchemaDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="SchemaDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchemaDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchemaDataSet9.xss">
+      <DependentUpon>SchemaDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\express.png" />
+    <None Include="Resources\Visa.png" />
+    <None Include="Resources\pay.png" />
+    <None Include="Resources\bill.png" />
+    <None Include="Resources\bg.jpg" />
+    <None Include="Resources\p1.jpg" />
+    <None Include="Resources\Logo11.png" />
+    <None Include="Resources\Logo1.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\log.png" />
+    <None Include="Resources\veIcon.jpg" />
+    <None Include="Resources\veri1.png" />
+    <None Include="Resources\reg.jpg" />
+    <None Include="Resources\proIcon1.jpg" />
+    <None Include="Resources\verifiedIcon.png" />
+    <None Include="Resources\entrance.jpg" />
+    <None Include="Resources\mandela.jpg" />
+    <None Include="Resources\truck.jpg" />
+    <None Include="Resources\ticket.jpg" />
+    <None Include="Resources\parking lot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\cust.jpg" />
+    <None Include="Resources\cust1.jpg" />
+    <Content Include="Resources\events.jpg" />
+    <None Include="Resources\events1.jpg" />
+    <Content Include="Resources\heritage.jpg" />
+    <None Include="Resources\heritage1.jpg" />
+    <Content Include="Resources\mm.jpg" />
+    <None Include="Resources\mm1.jpg" />
+    <Content Include="Resources\obama.jpg" />
+    <None Include="Resources\obama1.jpg" />
+    <None Include="Resources\p11.jpg" />
+    <Content Include="Resources\staff.jpg" />
+    <None Include="Resources\staff1.jpg" />
+    <Content Include="Schema.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schema_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Schema.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
